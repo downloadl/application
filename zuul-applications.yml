@@ -12,8 +12,8 @@ eureka:
     instance-id: gateway-9527.com
     prefer-ip-address: true
 zuul:
-  prefix: "/aigou"   #Ìí¼ÓÇ°×º
-  ignored-services: "*"  #ºöÂÔËùÓĞ,²»ÄÜÖ±½ÓÊ¹ÓÃ·şÎñÃû·ÃÎÊ,
+  prefix: "/aigou"   #æ·»åŠ å‰ç¼€
+  ignored-services: "*"  #å¿½ç•¥æ‰€æœ‰,ä¸èƒ½ç›´æ¥ä½¿ç”¨æœåŠ¡åè®¿é—®,
   routes:
     plat.serviceId: employee-provider
     plat.path: /plat/**
@@ -32,8 +32,8 @@ eureka:
     instance-id: gateway-9528.com
     prefer-ip-address: true
 zuul:
-  prefix: "/aigou"   #Ìí¼ÓÇ°×º
-  ignored-services: "*"  #ºöÂÔËùÓĞ,²»ÄÜÖ±½ÓÊ¹ÓÃ·şÎñÃû·ÃÎÊ,
+  prefix: "/aigou"   #æ·»åŠ å‰ç¼€
+  ignored-services: "*"  #å¿½ç•¥æ‰€æœ‰,ä¸èƒ½ç›´æ¥ä½¿ç”¨æœåŠ¡åè®¿é—®,
   routes:
     plat.serviceId: employee-provider
     plat.path: /plat/**
