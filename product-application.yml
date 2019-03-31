@@ -1,25 +1,41 @@
+spring:
+  profiles:
+    active: dev
+---
 server:
-  port: 8003
+  port: 8002
 spring:
   application:
-    name: PRODUCT-PROVIDER
+    name: PRODUCT-SERVICE
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/aigou
+      username: root
+      password: 123456
   profiles: dev
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka #设置需要将服务注册到哪里,
-  instance:
-    prefer-ip-address: true #是否在注册中心添加IP显示
+      defaultZone: http://localhost:7001/eureka/
+mybatis-plus:
+  mapper-locations: classpath:cn/itsource/aigou/mapper/*Mapper.xml
+  type-aliases-package: cn.itsource.aigou.domain,cn.itsource.aigou.query
 ---
 server:
-  port: 8004
+  port: 8003
 spring:
   application:
-    name: PRODUCT-PROVIDER-TEST
+    name: PRODUCT-SERVICE-TEST
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/aigou_test
+      username: root
+      password: 123456
   profiles: test
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka #设置需要将服务注册到哪里
-  instance:
-    prefer-ip-address: true #是否在注册中心添加IP显示
+      defaultZone: http://localhost:7001/eureka/
+mybatis-plus:
+  mapper-locations: classpath:cn/itsource/aigou/mapper/*Mapper.xml
+type-aliases-package: cn.itsource.aigou.domain,cn.itsource.aigou.query
