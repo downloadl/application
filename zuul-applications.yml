@@ -17,7 +17,7 @@ zuul:
   routes:
     plat.serviceId: plat-service
     plat.path: /plat/**
-    product.serviceId: product-provider
+    product.serviceId: product-service
     product.path: /product/**
 ---
 server:
@@ -39,5 +39,5 @@ zuul:
   routes:
     plat.serviceId: plat-service
     plat.path: /plat/**
-    product.serviceId: product-provider
+    product.serviceId: product-service
     product.path: /product/**
