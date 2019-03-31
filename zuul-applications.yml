@@ -15,7 +15,7 @@ zuul:
   prefix: "/aigou"   #添加前缀
   ignored-services: "*"  #忽略所有,不能直接使用服务名访问,
   routes:
-    plat.serviceId: employee-provider
+    plat.serviceId: plat-service
     plat.path: /plat/**
     product.serviceId: product-provider
     product.path: /product/**
@@ -37,7 +37,7 @@ zuul:
   prefix: "/aigou"   #添加前缀
   ignored-services: "*"  #忽略所有,不能直接使用服务名访问,
   routes:
-    plat.serviceId: employee-provider
+    plat.serviceId: plat-service
     plat.path: /plat/**
     product.serviceId: product-provider
     product.path: /product/**
