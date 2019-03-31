@@ -1,8 +1,8 @@
 server:
-  port: 8001
+  port: 8003
 spring:
   application:
-    name: EMPLOYEE-PROVIDER
+    name: PRODUCT-PROVIDER
   profiles: dev
 eureka:
   client:
@@ -12,10 +12,10 @@ eureka:
     prefer-ip-address: true #是否在注册中心添加IP显示
 ---
 server:
-  port: 8002
+  port: 8004
 spring:
   application:
-    name: EMPLOYEE-PROVIDER-TEST
+    name: PRODUCT-PROVIDER-TEST
   profiles: test
 eureka:
   client:
